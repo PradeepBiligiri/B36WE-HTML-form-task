@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form_body">
+    <h1>User Details</h1>
+    <form id="submit" class="form">
+      <div>
+        <label for="FirstName">First Name : </label>
+        <input
+          type="text"
+          name="FirstName"
+          id="FirstName"
+          placeholder="Please enter your First Name"
+        />
+      </div>
+      <div>
+        <label for="LastName">Last Name : </label>
+        <input
+          type="text"
+          name="LastName"
+          id="LastName"
+          placeholder="Please enter your Last Name"
+        />
+      </div>
+      <div>
+        Gender :
+        <label for="Male">Male</label>
+        <input type="radio" id="gender" name="gender" value="Male" />
+        <label for="Female">Female</label>
+        <input type="radio" id="gender" name="gender" value="Female" />
+      </div>
+
+      <div>
+        <label for="address">Address : </label>
+        <input name="address" type="text" id="address" />
+      </div>
+
+      <div>
+        <label for="pincode">Pincode : </label>
+        <input type="text" name="pincode" id="pincode" />
+      </div>
+      <div>
+        <label for="state">State : </label>
+        <input type="text" name="state" id="state" />
+      </div>
+
+      <div>
+        <label for="country">Country : </label>
+        <input type="text" name="country" id="country" />
+      </div>
+      <div>
+        Favorite food :
+        <label for="Pizza">Pizza</label>
+        <input type="Checkbox" id="Favoritefood" value="Pizza" />
+        <label for="Burger">Burger</label>
+        <input type="Checkbox" id="Favoritefood" value="Burger" />
+        <label for="Sandwich">Sandwich</label>
+        <input type="Checkbox" id="Favoritefood" value="Sandwich" />
+        <label for="FrenchFries">French Fries</label>
+        <input type="Checkbox" id="Favoritefood" value="French Fries" />
+        <label for="Wraps">Wraps</label>
+        <input type="Checkbox" id="Favoritefood" value="Wraps" />
+      </div>
+      <button type="submit" id="">Submit</button>
+    </form>
+    <table>
+      <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Pincode</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Favoritefood</th>
+      </thead>
+      <tbody id="display"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
