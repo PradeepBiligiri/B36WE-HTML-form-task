@@ -7,10 +7,29 @@ entry.addEventListener("submit", (x) => {
 
 var row = 1;
 
+var result = "";
+
+// function getGenderValu() => {
+//   var gender = document.getElementsByNames("gender");
+
+//   for (i = 0; i < gender.length; i++) {
+//     if (gender[i].checked) result = gender[i].value;
+//   }
+// }
+
 function displayDetails() {
+  function genderDetaisls() {
+    var ele = document.getElementById("gender");
+
+    for (i = 0; i < ele.length; i++) {
+      if (ele[i].checked) {
+        Gender = ele[i].value;
+      }
+    }
+  }
   var FirstName = document.getElementById("FirstName").value;
   var LastName = document.getElementById("LastName").value;
-  var Gender = document.getElementById("gender").value;
+  var Gender = genderDetaisls();
   var address = document.getElementById("address").value;
   var pincode = document.getElementById("pincode").value;
   var state = document.getElementById("state").value;
@@ -91,5 +110,5 @@ function displayDetails() {
   // cell7.innerHTML = country;
   // cell8.innerHTML = Favoritefood;
 
-  // row++;
+  row++;
 }
