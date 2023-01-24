@@ -18,18 +18,18 @@ var result = "";
 // }
 
 function displayDetails() {
-  function genderDetaisls() {
-    var ele = document.getElementById("gender");
+  // function genderDetaisls() {
+  //   var ele = document.getElementById("gender");
 
-    for (i = 0; i < ele.length; i++) {
-      if (ele[i].checked) {
-        Gender = ele[i].value;
-      }
-    }
-  }
+  //   for (i = 0; i < ele.length; i++) {
+  //     if (ele[i].checked) {
+  //       Gender = ele[i].value;
+  //     }
+  //   }
+  // }
   var FirstName = document.getElementById("FirstName").value;
   var LastName = document.getElementById("LastName").value;
-  var Gender = genderDetaisls();
+  var Gender = document.querySelector("[name=`gender`]:checked").value;
   var address = document.getElementById("address").value;
   var pincode = document.getElementById("pincode").value;
   var state = document.getElementById("state").value;
